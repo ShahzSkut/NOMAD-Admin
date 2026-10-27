@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@theme {
+  /* Font Family */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+
+  /* Brand Colors (from AppColors.dart) */
+  --color-primary-blue: #3EBDE0;
+  --color-primary-orange: #FAA621;
+  --color-accent-green: #A7D820;
+
+  /* Status Colors */
+  --color-status-ongoing: #379ae6;
+  --color-status-planned: #efb034;
+  --color-status-completed: #1dd75b;
+
+  /* UI Surface Colors */
+  --color-bg-main: #F5F5F5;
+  --color-card: #FFFFFF;
+  --color-border-subtle: #E5E5EA;
+
+  /* Text Colors */
+  --color-text-primary: #1C1C1E;
+  --color-text-secondary: #8E8E93;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-main);
+  color: var(--color-text-primary);
+  @apply antialiased;
+}
